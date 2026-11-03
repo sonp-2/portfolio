@@ -276,17 +276,17 @@ main, .footer { position: relative; z-index: 2; }
 .works { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; margin-top: 12px; }
 .work { display: block; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: var(--panel); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); transition: border-color 0.3s, transform 0.4s cubic-bezier(.2,.7,.2,1), opacity 0.9s; }
 .work:hover { border-color: var(--accent); transform: translateY(-8px); }
-.work__view { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #0a0c14; }
-.work__view iframe { position: absolute; top: 0; left: 0; width: 1280px; height: 720px; border: 0; transform-origin: 0 0; pointer-events: none; opacity: 0; transition: opacity 0.8s; background: #fff; }
+.work__view { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: #0a0c14; }
+.work__view iframe { position: absolute; top: 0; left: 0; width: 1280px; height: 800px; border: 0; transform-origin: 0 0; pointer-events: none; opacity: 0; transition: opacity 0.8s; background: #fff; }
 .work__view iframe.ready { opacity: 1; }
 @media (min-width: 901px) { .works { grid-template-columns: repeat(3, 1fr); } }
 .work__shade { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 60%, rgba(5, 6, 10, 0.7)); pointer-events: none; transition: opacity 0.3s; }
 .work:hover .work__shade { opacity: 0; }
-.work__body { padding: 22px 26px 28px; position: relative; }
+.work__body { padding: 18px 22px 20px; position: relative; }
 .work__no { font-family: var(--f-mono); font-size: 12px; color: var(--accent); letter-spacing: 0.2em; transition: color 0.8s; }
 .work h3 { font-family: var(--f-head); font-size: 22px; font-weight: 700; margin: 6px 0 2px; }
-.work__cat { font-family: var(--f-mono); font-size: 11.5px; color: var(--muted); margin-bottom: 10px; letter-spacing: 0.04em; }
-.work p { font-size: 13.5px; color: #b4b9c8; line-height: 1.8; }
+.work__cat { font-family: var(--f-mono); font-size: 11.5px; color: var(--muted); margin-bottom: 6px; letter-spacing: 0.04em; }
+.work p { font-size: 13.5px; color: #b4b9c8; line-height: 1.6; }
 
 /* STACK */
 .section--stack { padding-bottom: 120px; overflow-x: clip; }
