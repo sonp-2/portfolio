@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大谷 蒼一郎 | Portfolio</title>
+    <meta name="description" content="大谷 蒼一郎のポートフォリオ。Webサイト制作とシステム開発の実績。">
+    <meta name="theme-color" content="#05060a">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+    <canvas id="bg" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="glow" id="glow" aria-hidden="true"></div>
+
+    <header class="nav" id="nav">
+        <a class="nav__logo" href="#top">sonp<span>.jp</span></a>
+        <nav class="nav__links">
+            <a href="#origin">Origin</a>
+            <a href="#works">Works</a>
+            <a href="#projects">Projects</a>
+            <a href="#case">Case Study</a>
+            <a href="#stack">Stack</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- INTRO -->
+        <section class="intro" id="top" data-scene="0">
+            <div class="wrap">
+                <p class="eyebrow reveal"><span class="dot"></span>PORTFOLIO / 2026</p>
+                <h1 class="intro__name" id="introName" aria-label="大谷 蒼一郎">大谷 蒼一郎</h1>
+                <p class="intro__en reveal">Soichiro Ohtani</p>
+                <p class="intro__lead reveal">
+                    Webサイトの制作から、<br class="sp">サーバー側の設計・開発まで。
+                </p>
+                <div class="intro__cta reveal">
+                    <a class="btn btn--primary" href="#case">Case Study <span>→</span></a>
+                    <a class="btn" href="#works">Works <span>↓</span></a>
+                </div>
+            </div>
+            <div class="scroll-hint" aria-hidden="true"><span></span>SCROLL</div>
+        </section>
+
+        <!-- ORIGIN -->
+        <section class="section" id="origin" data-scene="1">
+            <div class="wrap">
+                <p class="eyebrow reveal"><span class="dot"></span>01 / ORIGIN</p>
+                <h2 class="h2 reveal">レッドストーン回路で作った電卓とワープロ</h2>
+                <p class="lead reveal">小学6年〜中学1年のころ、マインクラフトのレッドストーン回路で電卓とワープロを作りました。プログラミングに興味を持ったきっかけです。</p>
+
+                <div class="embed-grid">
+                    <div class="embed reveal">
+                        <div class="embed__bar">
+                            <span>マインクラフト ／ 電卓</span>
+                            <a class="yt" href="https://youtu.be/D5RnOLNULpQ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>動画を見る ↗</a>
+                        </div>
+                        <div class="embed__shots">
+                            <a href="assets/origin/calc-1.png" target="_blank" rel="noopener"><img src="assets/origin/calc-1.png" alt="マインクラフトで作った電卓の画面 1" loading="lazy"></a>
+                            <a href="assets/origin/calc-2.png" target="_blank" rel="noopener"><img src="assets/origin/calc-2.png" alt="マインクラフトで作った電卓の画面 2" loading="lazy"></a>
+                        </div>
+                    </div>
+
+                    <div class="embed reveal">
+                        <div class="embed__bar">
+                            <span>マインクラフト ／ ワープロ</span>
+                            <a class="yt" href="https://youtu.be/mKC47wX5-0M" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>動画を見る ↗</a>
+                        </div>
+                        <div class="embed__shots">
+                            <a href="assets/origin/wp-1.png" target="_blank" rel="noopener"><img src="assets/origin/wp-1.png" alt="マインクラフトで作ったワープロの画面 1" loading="lazy"></a>
+                            <a href="assets/origin/wp-2.png" target="_blank" rel="noopener"><img src="assets/origin/wp-2.png" alt="マインクラフトで作ったワープロの画面 2" loading="lazy"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORKS -->
+        <section class="section" id="works" data-scene="3">
+            <div class="wrap">
+                <p class="eyebrow reveal"><span class="dot"></span>02 / WORKS</p>
+                <h2 class="h2 reveal">18歳の頃に作ったWebサイト</h2>
+                <p class="lead reveal">2022年の夏から秋にかけて、実在の店舗のサイトを5件作りました。もともとはWordPressのテーマ（PHP）で、このポートフォリオでは静的ページとして作り直しています。下のプレビューは、実際のページです。</p>
+
+                <div class="works">
+                    <a class="work reveal" href="https://works.sonp.jp/cheri/">
+                        <div class="work__view" data-src="https://works.sonp.jp/cheri/"><div class="work__shade"></div></div>
+                        <div class="work__body">
+                            <span class="work__no">#01</span>
+                            <h3>Petsalon Cheri</h3>
+                            <p class="work__cat">トリミングサロン</p>
+                            <p>人生で最初に作ったサイト。スクロール連動のナビ、ギャラリーのモーダル、Swiperのスライダー。</p>
+                        </div>
+                    </a>
+                    <a class="work reveal" href="https://works.sonp.jp/dokodemo/">
+                        <div class="work__view" data-src="https://works.sonp.jp/dokodemo/"><div class="work__shade"></div></div>
+                        <div class="work__body">
+                            <span class="work__no">#02</span>
+                            <h3>どこでもRECOVER</h3>
+                            <p class="work__cat">オフィス出張型マッサージ</p>
+                            <p>2ページ構成。ハンバーガーメニュー、画面幅で切り替わるロゴ画像、Q&Aのアコーディオン。</p>
+                        </div>
+                    </a>
+                    <a class="work reveal" href="https://works.sonp.jp/mominoki/">
+                        <div class="work__view" data-src="https://works.sonp.jp/mominoki/"><div class="work__shade"></div></div>
+                        <div class="work__body">
+                            <span class="work__no">#03</span>
+                            <h3>もみの氣 鶴橋店</h3>
+                            <p class="work__cat">もみほぐし・リラクゼーション</p>
+                            <p>漫画風のデザイン。日本語フォントの準備、お知らせの開閉、Swiperのスライダー。</p>
+                        </div>
+                    </a>
+                    <a class="work reveal" href="https://works.sonp.jp/recover/">
+                        <div class="work__view" data-src="https://works.sonp.jp/recover/"><div class="work__shade"></div></div>
+                        <div class="work__body">
+                            <span class="work__no">#04</span>
+                            <h3>RECOVER 長堀橋</h3>
+                            <p class="work__cat">リラクゼーションスペース</p>
+                            <p>木目調のデザイン。最新情報の開閉、YouTube動画とGoogleマップの埋め込み、スマホ用の電話ボタン。</p>
+                        </div>
+                    </a>
+                    <a class="work reveal" href="https://works.sonp.jp/honin/">
+                        <div class="work__view" data-src="https://works.sonp.jp/honin/"><div class="work__shade"></div></div>
+                        <div class="work__body">
+                            <span class="work__no">#05</span>
+                            <h3>健美道本院</h3>
+                            <p class="work__cat">鍼灸・マッサージ ／ 引き継いで完成</p>
+                            <p>他の人が作り始めたものを引き継ぎ、完成させました。5ページ構成、料金ページのアンカー移動、bxSliderとSwiper。</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section" id="projects" data-scene="3">
+            <div class="wrap">
+                <p class="eyebrow reveal"><span class="dot"></span>03 / PROJECTS</p>
+                <h2 class="h2 reveal">自作のインタプリタ言語 Dolphin</h2>
+                <p class="lead reveal">2025年4月に C++ で作り始めた自作のインタプリタ言語を、Rust で本格的に作り直しました。<br>字句解析（レキサー）と構文解析（パーサー）から実装しています。<br>ブラウザでも気軽に試せるようにRustをWebAssembly (wasm) にしてあるので、下のエディタにコードを書けばブラウザ上でそのまま動かせます。</p>
+
+                <div class="chips reveal">
+                    <span>Rust</span><span>WebAssembly</span><span>C++</span><span>レキサー</span><span>パーサー</span>
+                </div>
+
+                <div class="embed reveal">
+                    <div class="embed__bar">
+                        <span>dolphin.sonp.jp</span>
+                        <span class="embed__actions">
+                            <a href="https://github.com/sonp-2/dolphin" target="_blank" rel="noopener" aria-label="GitHub リポジトリ"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub ↗</a>
+                            <a href="https://dolphin.sonp.jp/" target="_blank" rel="noopener">別タブで開く ↗</a>
+                        </span>
+                    </div>
+                    <div class="embed__view" data-embed="https://dolphin.sonp.jp/"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CASE STUDY -->
+        <section class="section" id="case" data-scene="2">
+            <div class="wrap">
+                <p class="eyebrow reveal"><span class="dot"></span>04 / CASE STUDY</p>
+                <h2 class="h2 reveal">LINE相談の返信案を、AIが作り、<br class="pc">人が承認して送る仕組み</h2>
+                <p class="meta reveal">住宅ローン相談 ／ 2026 ／ 業務委託</p>
+
+                <p class="lead reveal">住宅ローンの相談をLINEで受けている会社向けに、お客様のメッセージへの返信案をAIが作り、Slackでスタッフが承認するとLINEに送信される仕組みです。</p>
+
+                <div class="pipeline reveal" id="pipeline" aria-label="処理の流れ">
+                    <div class="node"><b>L-STEP</b><small>Webhook</small></div>
+                    <i class="link"></i>
+                    <div class="node"><b>Cloud Run</b><small>Hono / TypeScript</small></div>
+                    <i class="link"></i>
+                    <div class="node"><b>Dify</b><small>RAG・分類・返信案</small></div>
+                    <i class="link"></i>
+                    <div class="node node--human"><b>Slack</b><small>人が承認・却下</small></div>
+                    <i class="link"></i>
+                    <div class="node"><b>LINE</b><small>L-STEP経由で送信</small></div>
+                </div>
+
+                <div class="chips reveal">
+                    <span>TypeScript</span><span>Hono</span><span>Google Cloud Run</span><span>Firestore</span><span>Dify</span><span>RAG</span><span>Slack API</span><span>L-STEP API</span><span>LLM (GPT系)</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- STACK -->
+        <section class="section section--stack" id="stack" data-scene="4">
+            <div class="wrap">
+                <p class="eyebrow reveal"><span class="dot"></span>05 / STACK</p>
+                <h2 class="h2 reveal">使ってきた技術</h2>
+            </div>
+            <div class="marquee" aria-hidden="true">
+                <div class="marquee__row"><span>TypeScript</span><span>Node.js</span><span>Hono</span><span>PostgreSQL</span><span>Firestore</span><span>Docker</span><span>Cloud Run</span><span>C/C++</span><span>Rust</span><span>WebAssembly</span><span>Dify</span><span>RAG</span><span>Slack API</span><span>L-STEP API</span><span>TypeScript</span><span>Node.js</span><span>Hono</span><span>PostgreSQL</span><span>Firestore</span><span>Docker</span><span>Cloud Run</span><span>C/C++</span><span>Rust</span><span>WebAssembly</span><span>Dify</span><span>RAG</span><span>Slack API</span><span>L-STEP API</span></div>
+                <div class="marquee__row marquee__row--rev"><span>HTML</span><span>CSS / SCSS</span><span>Tailwind CSS</span><span>JavaScript</span><span>PHP</span><span>WordPress</span><span>Swiper</span><span>HTML</span><span>CSS / SCSS</span><span>Tailwind CSS</span><span>JavaScript</span><span>PHP</span><span>WordPress</span><span>Swiper</span></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrap">
+            <p class="footer__big">Thank you for<br>scrolling.</p>
+            <p class="footer__small">© 2026 Soichiro Ohtani — sonp.jp</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+</html>
